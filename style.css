@@ -1366,3 +1366,84 @@ button {
         line-height: 1.7 !important;
     }
 }
+/* ===== LETTER FINAL FIX ===== */
+
+.letter-section {
+    min-height: 100vh !important;
+    height: auto !important;
+    padding: 110px 20px 140px !important;
+    display: block !important;
+    overflow: visible !important;
+}
+
+.letter-wrap {
+    width: min(94vw, 850px) !important;
+    margin: 50px auto 0 !important;
+    position: relative !important;
+}
+
+.letter-wrap .envelope {
+    position: absolute !important;
+    width: 100% !important;
+    left: 0 !important;
+    top: 0 !important;
+    z-index: 1 !important;
+    pointer-events: none !important;
+}
+
+.letter-paper {
+    position: relative !important;
+    z-index: 10 !important;
+
+    width: min(94vw, 780px) !important;
+    min-height: 700px !important;
+    height: auto !important;
+    max-height: none !important;
+
+    margin: 0 auto !important;
+    padding: 60px 65px !important;
+
+    box-sizing: border-box !important;
+    overflow: visible !important;
+
+    line-height: 1.9 !important;
+    font-size: 18px !important;
+    text-align: left !important;
+
+    border-radius: 4px !important;
+}
+
+.letter-paper p {
+    margin: 0 0 22px !important;
+}
+
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 700px) {
+
+    .letter-section {
+        min-height: 100vh !important;
+        padding: 80px 12px 100px !important;
+    }
+
+    .letter-wrap {
+        width: 96vw !important;
+        margin-top: 35px !important;
+    }
+
+    .letter-paper {
+        width: 96vw !important;
+        min-height: auto !important;
+        max-height: none !important;
+
+        padding: 38px 24px !important;
+
+        font-size: 16px !important;
+        line-height: 1.8 !important;
+    }
+
+    .letter-paper p {
+        margin-bottom: 18px !important;
+    }
+}
