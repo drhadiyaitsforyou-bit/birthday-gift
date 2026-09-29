@@ -3,21 +3,21 @@
 ========================================= */
 
 const photos = [
-    "photos/01.jpg",
-    "photos/02.jpg",
-    "photos/03.jpg",
-    "photos/04.jpg",
-    "photos/05.jpg",
-    "photos/06.jpg",
-    "photos/07.jpg",
-    "photos/08.jpg",
-    "photos/09.jpg",
-    "photos/10.jpg",
-    "photos/11.jpg",
-    "photos/12.jpg",
-    "photos/13.jpg",
-    "photos/14.jpg",
-    "photos/15.jpg"
+    "01.jpg",
+    "02.jpg",
+    "03.jpg",
+    "04.jpg",
+    "05.jpg",
+    "06.jpg",
+    "07.jpg",
+    "08.jpg",
+    "09.jpg",
+    "10.jpg",
+    "11.jpg",
+    "12.jpg",
+    "13.jpg",
+    "14.jpg",
+    "15.jpg"
 ];
 
 const captions = [
