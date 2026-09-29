@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Hadiya ❤️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="loader">
+    <div class="loader-ring"></div>
+    <div class="loader-text">A little story is waiting...</div>
+</div>
+
+<canvas id="stars"></canvas>
+
+<div class="grain"></div>
+<div class="vignette"></div>
+
+<div class="ambient ambient-1"></div>
+<div class="ambient ambient-2"></div>
+
+<button id="musicBtn" class="music-btn">
+    <span class="music-icon">♪</span>
+    <span id="musicText">Music</span>
+</button>
+
+<main id="experience">
+
+    <!-- INTRO -->
+
+    <section class="chapter intro active" id="intro">
+
+        <div class="intro-orbit"></div>
+
+        <div class="intro-content">
+
+            <p class="eyebrow reveal">A little something for someone special</p>
+
+            <h1 class="intro-title">
+                <span>For</span>
+                <strong>Hadiya</strong>
+            </h1>
+
+            <div class="intro-line"></div>
+
+            <p class="intro-subtitle">
+                Not just a birthday wish...
+                <br>
+                but a small journey through memories.
+            </p>
+
+            <button id="beginBtn" class="gold-btn">
+                <span>Begin the story</span>
+                <i>→</i>
+            </button>
+
+        </div>
+
+        <div class="scroll-hint">
+            <span></span>
+            <small>your story begins here</small>
+        </div>
+
+    </section>
+
+
+    <!-- PHOTO CINEMA -->
+
+    <section class="chapter photo-chapter" id="photosChapter">
+
+        <div class="chapter-heading">
+            <span>01</span>
+            <p>MEMORIES</p>
+        </div>
+
+        <div class="photo-intro">
+            <p class="small-label">A collection of moments</p>
+            <h2>Some memories<br><em>never fade.</em></h2>
+        </div>
+
+        <div class="cinema">
+
+            <div class="photo-glow"></div>
+
+            <div class="photo-frame">
+
+                <div class="photo-shade"></div>
+
+                <img
+                    id="mainPhoto"
+                    src="photos/01.jpg"
+                    alt="Hadiya memory"
+                >
+
+                <div class="photo-number">
+                    <span id="photoCurrent">01</span>
+                    <i>/</i>
+                    <span>15</span>
+                </div>
+
+                <div class="photo-caption" id="photoCaption">
+                    The beginning of something beautiful.
+                </div>
+
+            </div>
+
+            <div class="photo-progress">
+                <div id="photoProgress"></div>
+            </div>
+
+        </div>
+
+        <div class="photo-footer">
+            <p id="photoHint">15 moments • one beautiful story</p>
+        </div>
+
+    </section>
+
+
+    <!-- MEMORY TIMELINE -->
+
+    <section class="chapter memories" id="memories">
+
+        <div class="chapter-heading">
+            <span>02</span>
+            <p>THE LITTLE THINGS</p>
+        </div>
+
+        <div class="memory-center">
+
+            <p class="small-label">Looking back</p>
+
+            <h2>
+                It's funny how<br>
+                <em>little moments</em><br>
+                become big memories.
+            </h2>
+
+            <div class="memory-cards">
+
+                <div class="memory-card">
+                    <span>01</span>
+                    <h3>Childhood</h3>
+                    <p>
+                        The days when everything felt simpler,
+                        louder and somehow more memorable.
+                    </p>
+                </div>
+
+                <div class="memory-card">
+                    <span>02</span>
+                    <h3>Late Nights</h3>
+                    <p>
+                        Random conversations, studying,
+                        laughing and staying awake way too late.
+                    </p>
+                </div>
+
+                <div class="memory-card">
+                    <span>03</span>
+                    <h3>Today</h3>
+                    <p>
+                        Different lives, different routines,
+                        but some bonds quietly stay the same.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- GIFTS -->
+
+    <section class="chapter gifts" id="gifts">
+
+        <div class="chapter-heading">
+            <span>03</span>
+            <p>A FEW SURPRISES</p>
+        </div>
+
+        <div class="gift-content">
+
+            <p class="small-label">Six little presents</p>
+
+            <h2>
+                Pick a gift.<br>
+                <em>Open a memory.</em>
+            </h2>
+
+            <div class="gift-grid">
+
+                <button class="gift" data-gift="0">
+                    <span class="gift-number">01</span>
+                    <div class="gift-box">
+                        <span>🎁</span>
+                    </div>
+                    <p>A tiny surprise</p>
+                </button>
+
+                <button class="gift" data-gift="1">
+                    <span class="gift-number">02</span>
+                    <div class="gift-box">
+                        <span>🌙</span>
+                    </div>
+                    <p>For late nights</p>
+                </button>
+
+                <button class="gift" data-gift="2">
+                    <span class="gift-number">03</span>
+                    <div class="gift-box">
+                        <span>❤️</span>
+                    </div>
+                    <p>For the bond</p>
+                </button>
+
+                <button class="gift" data-gift="3">
+                    <span class="gift-number">04</span>
+                    <div class="gift-box">
+                        <span>✨</span>
+                    </div>
+                    <p>For your dreams</p>
+                </button>
+
+                <button class="gift" data-gift="4">
+                    <span class="gift-number">05</span>
+                    <div class="gift-box">
+                        <span>🩺</span>
+                    </div>
+                    <p>For Dr. Hadiya</p>
+                </button>
+
+                <button class="gift" data-gift="5">
+                    <span class="gift-number">06</span>
+                    <div class="gift-box">
+                        <span>🎂</span>
+                    </div>
+                    <p>The final one</p>
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- LETTER -->
+
+    <section class="chapter letter-chapter" id="letter">
+
+        <div class="chapter-heading">
+            <span>04</span>
+            <p>A LETTER</p>
+        </div>
+
+        <div class="letter-area">
+
+            <p class="small-label">Something I wanted to say</p>
+
+            <h2>
+                From me,<br>
+                <em>to you.</em>
+            </h2>
+
+            <button id="envelope" class="envelope">
+
+                <div class="envelope-back"></div>
+
+                <div class="letter-paper">
+
+                    <div class="letter-content" id="letterContent"></div>
+
+                </div>
+
+                <div class="envelope-flap"></div>
+
+                <div class="seal">H</div>
+
+            </button>
+
+            <p class="letter-hint">Tap the envelope</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- FUTURE DOCTOR -->
+
+    <section class="chapter doctor" id="doctor">
+
+        <div class="doctor-bg"></div>
+
+        <div class="doctor-content">
+
+            <p class="small-label">One day...</p>
+
+            <div class="medical-symbol">✦</div>
+
+            <h2>
+                Future<br>
+                <em>Doctor Hadiya</em>
+            </h2>
+
+            <div class="doctor-line"></div>
+
+            <p class="doctor-text">
+                There will be difficult chapters.
+                <br>
+                Mock tests.
+                <br>
+                Long study sessions.
+                <br>
+                Days when nothing seems enough.
+            </p>
+
+            <div class="doctor-quote">
+                “One chapter.<br>
+                One question.<br>
+                One day at a time.”
+            </div>
+
+            <p class="doctor-final">
+                Keep going.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CAKE -->
+
+    <section class="chapter cake-chapter" id="cake">
+
+        <div class="chapter-heading">
+            <span>05</span>
+            <p>YOUR DAY</p>
+        </div>
+
+        <div class="cake-content">
+
+            <p class="small-label">And now...</p>
+
+            <h2>
+                Make a<br>
+                <em>wish.</em>
+            </h2>
+
+            <div class="cake">
+
+                <div class="flame flame-1"></div>
+                <div class="flame flame-2"></div>
+                <div class="flame flame-3"></div>
+
+                <button class="candle candle-1" data-candle="1"></button>
+                <button class="candle candle-2" data-candle="2"></button>
+                <button class="candle candle-3" data-candle="3"></button>
+
+                <div class="cake-top">
+                    <div class="icing"></div>
+                </div>
+
+                <div class="cake-body">
+                    <div class="cake-stripe"></div>
+                    <div class="cake-stripe"></div>
+                    <div class="cake-stripe"></div>
+                </div>
+
+                <div class="cake-plate"></div>
+
+            </div>
+
+            <p id="candleHint" class="cake-hint">
+                Tap the candles and make a wish ✨
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CELEBRATION -->
+
+    <section class="chapter celebration" id="celebration">
+
+        <canvas id="confetti"></canvas>
+
+        <div class="celebration-content">
+
+            <div class="celebration-stars">✦ ✧ ✦</div>
+
+            <p class="small-label">Today is yours</p>
+
+            <h2>
+                Happy Birthday
+            </h2>
+
+            <h1>
+                Hadiya
+            </h1>
+
+            <div class="celebration-line"></div>
+
+            <p>
+                May this year bring you closer<br>
+                to everything you've been dreaming about.
+            </p>
+
+            <div class="heart">♥</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FINAL -->
+
+    <section class="chapter final" id="final">
+
+        <div class="final-orbit"></div>
+
+        <div class="final-content">
+
+            <p class="small-label">And that's the story...</p>
+
+            <h2>
+                Until the next<br>
+                <em>chapter.</em>
+            </h2>
+
+            <div class="final-name">
+                Hadiya
+            </div>
+
+            <p class="final-message">
+                Keep smiling.<br>
+                Keep dreaming.<br>
+                Keep becoming the person you want to be.
+            </p>
+
+            <div class="final-signature">
+                With love,<br>
+                <strong>Your annoying brother ❤️</strong>
+            </div>
+
+            <button id="replayBtn" class="gold-btn">
+                <span>Replay the story</span>
+                <i>↻</i>
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- GIFT MODAL -->
+
+<div id="giftModal" class="modal">
+
+    <div class="modal-backdrop"></div>
+
+    <div class="modal-box">
+
+        <button id="closeGift" class="modal-close">×</button>
+
+        <span id="giftIcon" class="modal-icon">🎁</span>
+
+        <p class="small-label" id="giftNumber">GIFT 01</p>
+
+        <h2 id="giftTitle">A tiny surprise</h2>
+
+        <p id="giftMessage"></p>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
